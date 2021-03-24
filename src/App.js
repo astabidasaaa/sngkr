@@ -16,8 +16,15 @@ function App() {
 
   return (
     <div className="App">
-      <video autoPlay muted loop playsInline id="background-video">
-        <source src={video} type="video/mp4" />
+      <video
+        preload="auto"
+        autoPlay
+        muted
+        loop
+        playsInline
+        id="background-video"
+      >
+        <source src={video} type="video/webm" />
       </video>
       <div id="grid">{loop(b)}</div>
       <div className="content">

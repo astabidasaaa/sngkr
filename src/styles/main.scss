@@ -145,6 +145,10 @@ body {
   letter-spacing: 0px;
   text-align: left;
   overflow: hidden;
+
+  // @media screen and (max-width: 480px) {
+  //   background-color: #252525;
+  // }
 }
 
 #root,
@@ -175,7 +179,7 @@ body {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  opacity: 0.6;
+  opacity: 0.8;
   z-index: -999;
 }
 
@@ -218,9 +222,13 @@ h1 {
   font-weight: 700;
   color: white;
   margin: 1.5rem 0;
-  text-shadow: 10px 10px 10px #1f1f1f;
+  text-shadow: 10px 10px 8px rgba(109, 109, 109, 0.4);
   user-select: none;
   z-index: -1;
+
+  @media screen and (max-width: 611px) {
+    animation: glitchMini 1.2s linear infinite;
+  }
 }
 
 @keyframes glitch {
@@ -246,6 +254,32 @@ h1 {
   }
   63% {
     transform: translate(-50px, -10px) skew(-13deg);
+  }
+}
+
+@keyframes glitchMini {
+  2%,
+  64% {
+    transform: translate(4px, 0) skew(-0deg);
+  }
+  4%,
+  60% {
+    transform: translate(-4px, 0) skew(0deg);
+  }
+  9% {
+    transform: translate(-2px, -5px);
+  }
+  10% {
+    transform: translate(10px, 5px) skew(7deg);
+  }
+  11% {
+    transform: translate(-1px, -5px);
+  }
+  62% {
+    transform: translate(10px, 5px) skew(7deg);
+  }
+  63% {
+    transform: translate(-10px, -5px) skew(-7deg);
   }
 }
 
@@ -331,7 +365,7 @@ h3 {
   letter-spacing: 2px;
   margin: 0;
   margin-bottom: 0.5rem;
-  text-shadow: 10px 10px 10px #1f1f1f;
+  text-shadow: 5px 5px 5px rgba(109, 109, 109, 0.4);
   user-select: all;
   z-index: 2;
 
@@ -343,6 +377,10 @@ h3 {
     color: #fffaa5;
     background-color: #f38630;
     text-shadow: 2px 2px #31808c;
+  }
+
+  @media screen and (max-width: 611px) {
+    animation: glitchMini 1.2s linear infinite;
   }
 }
 
