@@ -1,4 +1,4 @@
-import video from "./assets/tv-static.mp4";
+import video from "./assets/tv-static_8.webm";
 import "./styles/main.scss";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <video autoPlay muted loop id="background-video">
+      <video autoPlay muted loop playsInline id="background-video">
         <source src={video} type="video/mp4" />
       </video>
       <div id="grid">{loop(b)}</div>
