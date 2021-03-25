@@ -18,6 +18,7 @@ function App() {
     <div className="App">
       <video
         preload="auto"
+        controls
         autoPlay
         muted
         loop
