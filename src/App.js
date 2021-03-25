@@ -1,4 +1,5 @@
 import video from "./assets/tv-static_8.webm";
+import video2 from "./assets/tv-static-min.mp4";
 import "./styles/main.scss";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         id="background-video"
       >
         <source src={video} type="video/webm" />
+        <source src={video2} type="video/mp4" />
       </video>
       <div id="grid">{loop(b)}</div>
       <div className="content">
